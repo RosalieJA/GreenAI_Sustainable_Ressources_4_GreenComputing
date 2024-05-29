@@ -9,6 +9,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import time  # Importation du module time
+from codecarbon import EmissionsTracker
 
 ssl._create_default_https_context = ssl.create_default_context(cafile=certifi.where())
 
@@ -30,20 +31,35 @@ x_train = scaler.fit_transform(x_train)
 x_val = scaler.transform(x_val)
 x_test = scaler.transform(x_test)
 
+# Initialisation du tracker CodeCarbon
+tracker = EmissionsTracker(gpu_ids=[])
+
 # CREATION DU MODELE KNN
-knn = KNeighborsClassifier(n_neighbors=3)  # Vous pouvez ajuster le nombre de voisins
+knn = KNeighborsClassifier(n_neighbors=3)  #on peut ajuster le nombre de voisins
 
 # ENTRAINEMENT DU MODELE
+print("Début de l'entraînement du modèle KNN")
+tracker.start()  # Démarrage du suivi des émissions
 knn.fit(x_train, y_train)
+emissions_train = tracker.stop()  # Arrêt du suivi des émissions
+print(f"Émissions pendant l'entraînement: {emissions_train} kg CO2")
 
 # EVALUATION DU MODELE
+print("Évaluation du modèle sur les données de validation")
+tracker.start()  # Démarrage du suivi des émissions pour l'évaluation
 y_val_pred = knn.predict(x_val)
 val_accuracy = accuracy_score(y_val, y_val_pred)
-print('\nValidation accuracy:', val_accuracy)
+emissions_val = tracker.stop()  # Arrêt du suivi des émissions
+print(f"\nValidation accuracy: {val_accuracy}")
+print(f"Émissions pendant l'évaluation sur validation: {emissions_val} kg CO2")
 
+print("Évaluation du modèle sur les données de test")
+tracker.start()  # Démarrage du suivi des émissions pour l'évaluation
 y_test_pred = knn.predict(x_test)
 test_accuracy = accuracy_score(y_test, y_test_pred)
-print('\nTest accuracy:', test_accuracy)
+emissions_test = tracker.stop()  # Arrêt du suivi des émissions
+print(f"\nTest accuracy: {test_accuracy}")
+print(f"Émissions pendant l'évaluation sur test: {emissions_test} kg CO2")
 
 # PREDICTION
 files = ["zero.png", "one.png", "two.png", "three.png", "four.png", "five.png", "six.png", "seven.png"]
