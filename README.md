@@ -3,8 +3,8 @@
 BILAN DES DIFFERENTS CODES ET RESULTATS :  
 
 SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions
-- Exemple de Machine Learning (database : MNIST) : A venir
-- Exemple de Deep Learning (database : MNIST) : A venir 
+- Exemple de Machine Learning (test avec XOR) : A venir
+- Exemple de Deep Learning (test avec XOR) : A venir 
 
 
 AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation de CodeCarbon pour suivre les émissions 
