@@ -7,6 +7,7 @@ import PIL
 import tensorflow as tf
 tf.__version__
 from tensorflow.keras import layers
+from codecarbon import EmissionsTracker
 import time
 
 from IPython import display
