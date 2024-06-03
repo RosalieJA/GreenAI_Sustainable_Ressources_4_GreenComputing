@@ -3,10 +3,10 @@
 BILAN DES DIFFERENTS CODES ET RESULTATS :  
 
 SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions
-- Exemple de Machine Learning (test avec XOR) :
-  - Pyhton : perceptron multi-couches (10 couches cachées) => problème avec RAPL
-  - C++ : A venir
-- Exemple de Deep Learning (test avec XOR) : A venir
+- Exemple de Machine Learning (test avec XOR) : A venir
+- Exemple de Deep Learning (test avec XOR) :
+   - Pyhton : perceptron multi-couches (10 couches cachées) => tests à venir
+   -  C++ : perceptron multi-couches (10 couches cachées) => tests à venir
 
 
 AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation de CodeCarbon pour suivre les émissions 
@@ -19,5 +19,5 @@ Deep Learning : exemples avec MNIST
 
 Machine Learning : exemples avec MNIST
 - Supervisé : KNN (3 voisins) => Émissions : 9.00082625136501e-06 kg CO2 et Test accuracy: 0.9447
-- Non supervisé : KMEAN => A venir
+- Non supervisé : KMEAN (256 clusters) => A venir
 
