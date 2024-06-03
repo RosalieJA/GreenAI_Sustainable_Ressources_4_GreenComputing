@@ -5,7 +5,7 @@ BILAN DES DIFFERENTS CODES ET RESULTATS :
 SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions
 - Exemple de Machine Learning (test avec XOR) : A venir
 - Exemple de Deep Learning (test avec XOR) :
-   - Pyhton : perceptron multi-couches (10 couches cachées) => tests à venir
+   - Python : perceptron multi-couches (10 couches cachées) => tests à venir
    -  C++ : perceptron multi-couches (10 couches cachées) => tests à venir
 
 
