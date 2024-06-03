@@ -19,5 +19,5 @@ Deep Learning : exemples avec MNIST
 
 Machine Learning : exemples avec MNIST
 - Supervisé : KNN (3 voisins) => Émissions : 9.00082625136501e-06 kg CO2 et Test accuracy: 0.9447
-- Non supervisé : KMEAN (256 clusters) => A venir
+- Non supervisé : KMEAN (256 clusters) => Emissions : 1.3420924768623704e-06 kg CO2 et Test accuracy: 0.9014
 
