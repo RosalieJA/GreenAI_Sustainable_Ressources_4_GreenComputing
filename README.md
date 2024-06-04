@@ -9,7 +9,7 @@ SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions
    -  C++ : perceptron multi-couches (10 couches cachées) => tests à venir
 
 
-AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation de CodeCarbon pour suivre les émissions (cf. https://codecarbon.io/)
+AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation de CodeCarbon pour suivre les émissions https://codecarbon.io/
 
 Deep Learning : exemples avec MNIST
 - Exemple de ANN : perceptron multi-couches (10 couches cachées) => Emissions: 1.4007240778055813e-05 kg CO2 et Test accuracy: 0.9797999858856201
