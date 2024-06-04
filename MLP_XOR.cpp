@@ -1,3 +1,5 @@
+//Code fonctionnel mais prédiction mauvaise 
+
 #include <iostream>
 #include <vector>
 #include <cmath>
