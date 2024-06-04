@@ -1,3 +1,7 @@
+#WARNING 
+#needs a lot of ressources -> cannot be run on a laptop
+
+
 import glob
 import imageio
 import matplotlib.pyplot as plt
@@ -95,12 +99,11 @@ EPOCHS = 5
 noise_dim = 100
 num_examples_to_generate = 16
 
-# You will reuse this seed overtime (so it's easier)
+
 # to visualize progress in the animated GIF)
 seed = tf.random.normal([num_examples_to_generate, noise_dim])
 
-# Notice the use of `tf.function`
-# This annotation causes the function to be "compiled".
+
 @tf.function
 def train_step(images):
     noise = tf.random.normal([BATCH_SIZE, noise_dim])
@@ -127,7 +130,7 @@ def train(dataset, epochs):
     for image_batch in dataset:
       train_step(image_batch)
 
-    # Produce images for the GIF as you go
+    # Produce images for the GIF 
     display.clear_output(wait=True)
     generate_and_save_images(generator,
                              epoch + 1,
@@ -146,8 +149,6 @@ def train(dataset, epochs):
                            seed)
 
 def generate_and_save_images(model, epoch, test_input):
-  # Notice `training` is set to False.
-  # This is so all layers run in inference mode (batchnorm).
   predictions = model(test_input, training=False)
 
   fig = plt.figure(figsize=(4, 4))
@@ -160,7 +161,7 @@ def generate_and_save_images(model, epoch, test_input):
   plt.savefig('image_at_epoch_{:04d}.png'.format(epoch))
   plt.show()
 
-# Suivi des émissions
+# Use of codecarbon
 tracker = EmissionsTracker()
 tracker.start()
 
