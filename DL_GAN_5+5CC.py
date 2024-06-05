@@ -1,7 +1,7 @@
 #WARNING 
 #needs a lot of ressources -> cannot be run on a laptop
 
-
+#INSTALLATION DES BIBLIOTHEQUES
 import glob
 import imageio
 import matplotlib.pyplot as plt
@@ -16,6 +16,7 @@ import time
 
 from IPython import display
 
+#RECOLTE DES DONNEES
 (train_images, train_labels), (_, _) = tf.keras.datasets.mnist.load_data()
 train_images = train_images.reshape(train_images.shape[0], 28, 28, 1).astype('float32')
 train_images = (train_images - 127.5) / 127.5  # Normalize the images to [-1, 1]
@@ -23,6 +24,9 @@ BUFFER_SIZE = 60000
 BATCH_SIZE = 256
 # Batch and shuffle the data
 train_dataset = tf.data.Dataset.from_tensor_slices(train_images).shuffle(BUFFER_SIZE).batch(BATCH_SIZE)
+
+
+#DEFINITION DES FONCTIONS UTILES (GENERATEUR, DISCRIMINATEUR, ERREUR_GEN, ERREUR_DIS)
 def make_generator_model():
     model = tf.keras.Sequential()
     model.add(layers.Dense(7*7*256, use_bias=False, input_shape=(100,)))
