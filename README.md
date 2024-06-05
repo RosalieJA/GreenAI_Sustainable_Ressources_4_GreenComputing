@@ -20,9 +20,9 @@ Deep Learning : exemples avec MNIST
 - Exemple de ANN : perceptron multi-couches (10 couches cachées) => Emissions: 1.4007240778055813e-05 kg CO2 et Test accuracy: 0.9797999858856201
 - Exemple de CNN (7 couches cachées) => Emissions: 3.7664445672275096e-05 kg CO2 et Test accuracy: 0.9904999732971191
 - Exemple de RNN : GRU (2 couches cachées) => Emissions: 0.00010874017996317586 kg CO2 et Test accuracy: 0.9869999885559082
-- Exemple de GAN, à l'aide de la documentation officielle Tensorflow (5 couches cachées dans générateur + 5 couches cachées dans discriminateur) => A venir
+- Exemple de GAN, à l'aide de la documentation officielle Tensorflow (5 couches cachées dans générateur + 5 couches cachées dans discriminateur) 
 
-Deep Learning : exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) 
+Deep Learning : exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) => à venir (branche Essais)
 
   
 
