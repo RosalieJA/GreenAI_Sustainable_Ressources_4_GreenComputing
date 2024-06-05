@@ -1,3 +1,8 @@
+#WARNING 
+#needs a lot of ressources -> cannot be run on a laptop
+#problems during debugging -> don't merge branches straight away (not finished)
+
+
 #INSTALLATION DES BIBLIOTHEQUES
 import logging
 import time
