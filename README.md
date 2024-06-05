@@ -2,11 +2,11 @@
 
 BILAN DES DIFFERENTS CODES ET RESULTATS :  
 
-SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions
-- Exemple de Machine Learning (test avec XOR) : A venir
+SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions pour comparer les langages
 - Exemple de Deep Learning (test avec XOR) :
-   - Python : perceptron multi-couches (10 couches cachées) => tests à venir
-   -  C++ : perceptron multi-couches (10 couches cachées) => tests à venir
+   - Python : perceptron multi-couches (10 couches cachées)
+   -  C++ : perceptron multi-couches (10 couches cachées)
+Conclusion : C++ consomme moins que Python (confirme littérature)
 
 
 AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation de CodeCarbon pour suivre les émissions https://codecarbon.io/
@@ -22,7 +22,7 @@ Deep Learning : exemples avec MNIST
 - Exemple de RNN : GRU (2 couches cachées) => Emissions: 0.00010874017996317586 kg CO2 et Test accuracy: 0.9869999885559082
 - Exemple de GAN, à l'aide de la documentation officielle Tensorflow (5 couches cachées dans générateur + 5 couches cachées dans discriminateur) 
 
-Deep Learning : exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) => à venir (branche Essais)
+NOTE BENE : L'exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) n'est pas terminé (problèmes lors du débbugage) => dans la branche Essais => IL NE FAUT PAS MERGE
 
   
 
