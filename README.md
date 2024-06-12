@@ -26,7 +26,7 @@ AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation d
     - Fourier => Émissions : 1.7219968071579936e-09 kg CO2 et Temps: 0.0035228729248046875 secondes
 
 
-NOTE BENE : L'exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) n'est pas terminé (problèmes lors du débbugage) => dans la branche Essais => IL NE FAUT PAS MERGE
+NOTE BENE : L'exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) ne fonctionne pas complètement (problèmes lors du débbugage) => dans la branche Essais => IL NE FAUT PAS MERGE
   
 
 
