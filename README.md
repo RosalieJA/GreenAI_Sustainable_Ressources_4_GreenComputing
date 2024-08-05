@@ -1,5 +1,6 @@
 ## About 
 This student project (TX00 “green AI”, UTC) provides a review (2024), as well as some solutions to assess carbon emissions and reduce costs in modern AI projects, considering various (i) computer architectures, (ii) coding languages and (iii) ML/DL algorithms.
+
 [![](https://tinyurl.com/greenai-pledge)](https://github.com/daviddao/green-ai)
 
 ## Tools & scripts
