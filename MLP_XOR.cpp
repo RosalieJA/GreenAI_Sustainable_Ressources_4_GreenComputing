@@ -1,4 +1,4 @@
-//Code fonctionnel mais prédiction mauvaise 
+//Code fonctionnel mais prédiction encore insuffisante
 
 #include <iostream>
 #include <vector>
