@@ -1,6 +1,6 @@
 #WARNING 
-#needs a lot of ressources -> cannot be run on a laptop
-#problems during debugging -> don't merge branches straight away (not finished)
+#This script needs a lot of ressources -> cannot be run on a regular laptop (GPU required)
+#Still not functionnal (debugging ongoing)
 
 
 #INSTALLATION DES BIBLIOTHEQUES
