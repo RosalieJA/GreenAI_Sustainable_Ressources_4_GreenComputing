@@ -4,7 +4,7 @@ This student project (TX00 “green AI”, UTC) provides a review (2024), as wel
 [![](https://tinyurl.com/greenai-pledge)](https://github.com/daviddao/green-ai)
 
 ## Tools & scripts
--	without libraries, you can refer to Intel “Running Average Power Limit” (RAPL) technology                                                                                                     to track carbon emissions and compare different coding languages (here, we provide illustration scripts comparing Python vs C++ 10-layer artificial neural networks) ;
+-	without libraries, you can refer to Intel “Running Average Power Limit” (RAPL) technology to track carbon emissions and compare different coding languages (here, we provide illustration scripts comparing Python vs C++ 10-layer artificial neural networks) ;
 
 -	With libraries, you can use ([CodeCarbon]( https://codecarbon.io/)) to track carbon emissions when using ([TensorFlow](https://www.tensorflow.org/)) or ([Scikit Learn]( https://scikit-learn.org/stable/)). Following are some illustrations using scripts provided in the repository:
 
