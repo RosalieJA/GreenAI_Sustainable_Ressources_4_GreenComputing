@@ -1,29 +1,23 @@
-# TX00_GREEN_AI
+## About 
+This student project (TX00 “green AI”, UTC) provides a review (2024), as well as some solutions to assess carbon emissions and reduce costs in modern AI projects, considering various (i) computer architectures, (ii) coding languages and (iii) ML/DL algorithms.
 
-BILAN DES DIFFERENTS CODES ET RESULTATS :  
+[![](https://tinyurl.com/greenai-pledge)](https://github.com/daviddao/green-ai)
 
-SANS LIBRAIRIES => utilisation de RAPL pour suivre les émissions pour comparer les langages
-- Exemple de Deep Learning (test avec XOR) :
-   - Python : perceptron multi-couches (10 couches cachées)
-   -  C++ : perceptron multi-couches (10 couches cachées)
-Conclusion : C++ consomme moins que Python (confirme littérature)
+## Tools & scripts
+-	without libraries, you can refer to Intel “Running Average Power Limit” (RAPL) technology to track carbon emissions and compare different coding languages (here, we provide illustration scripts comparing Python vs C++ 10-layer artificial neural networks) ;
 
+-	With libraries, you can use ([CodeCarbon]( https://codecarbon.io/)) to track carbon emissions when using ([TensorFlow](https://www.tensorflow.org/)) or ([Scikit Learn]( https://scikit-learn.org/stable/)). Following are some illustrations using scripts provided in the repository:
 
-AVEC UTILISATION DE LIBRAIRIES : Tensorflow, scikit learn, etc. => utilisation de CodeCarbon pour suivre les émissions https://codecarbon.io/
+o	For Machine-Learning using the ([MNIST]( https://docs.ultralytics.com/datasets/classify/mnist/)) database, comparing supervised (KNN with 3 neighbors: emission = 9.0008262513e-06 kg CO2, accuracy = 0.945) vs unsupervised algorithms (Kmeans with 256 clusters: emissions = 1.3420924768e-06 kg CO2 et Test accuracy: 0.901) ;
 
+o	For Deep-Learning, using the ([MNIST]( https://docs.ultralytics.com/datasets/classify/mnist/)) database, comparing ANN (10-layer perceptron: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), CNN (7-layers: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), RNN (GRU with 2 layers: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and GAN (5-layer generator/ 5 layer discriminator : not tested) ;
 
-Machine Learning : exemples avec MNIST
-- Supervisé : KNN (3 voisins) => Émissions : 9.00082625136501e-06 kg CO2 et Test accuracy: 0.9447
-- Non supervisé : KMEAN (256 clusters) => Emissions : 1.3420924768623704e-06 kg CO2 et Test accuracy: 0.9014
-  
-Deep Learning : exemples avec MNIST
-- Exemple de ANN : perceptron multi-couches (10 couches cachées) => Emissions: 1.4007240778055813e-05 kg CO2 et Test accuracy: 0.9797999858856201
-- Exemple de CNN (7 couches cachées) => Emissions: 3.7664445672275096e-05 kg CO2 et Test accuracy: 0.9904999732971191
-- Exemple de RNN : GRU (2 couches cachées) => Emissions: 0.00010874017996317586 kg CO2 et Test accuracy: 0.9869999885559082
-- Exemple de GAN, à l'aide de la documentation officielle Tensorflow (5 couches cachées dans générateur + 5 couches cachées dans discriminateur) 
+o	CAUTION: Transformers are still under development.
 
-NOTE BENE : L'exemple de Transformeur (comme dans ChatGPT) "Attention is all you need" (à l'aide de la documentation officielle Tensorflow) n'est pas terminé (problèmes lors du débbugage) => dans la branche Essais => IL NE FAUT PAS MERGE
+o	Comparing ML vs a Theory-based model for image generation: Kmeans (emissions = 4.4933411717e-09 kg CO2, duration =  0.0261781215 sec.) vs Fourier (emissions = 1.72199680716e-09 kg CO2, duration = 0.0035228729 sec.)
 
-  
+## Report
+A full description of the project, including literature review (until May 2024), scripts and guidelines for green AI are available in the project report (PDF, French).
 
-
+## Authors
+Rosalie JARDRI & Julie GUILLERMET (supervision : Pr. Mark SHAWKY)
