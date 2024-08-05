@@ -1,5 +1,5 @@
 #WARNING 
-#needs a lot of ressources -> cannot be run on a laptop
+#This script needs a lot of ressources -> cannot be run on a regular laptop (GPU required)
 
 #INSTALLATION DES BIBLIOTHEQUES
 import glob
