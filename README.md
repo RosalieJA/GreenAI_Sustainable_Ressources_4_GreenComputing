@@ -12,7 +12,7 @@ o	For Machine-Learning using the ([MNIST]( https://docs.ultralytics.com/datasets
 
 o	For Deep-Learning, using the ([MNIST]( https://docs.ultralytics.com/datasets/classify/mnist/)) database, comparing ANN (10-layer perceptron: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), CNN (7-layers: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), RNN (GRU with 2 layers: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and GAN (5-layer generator/ 5 layer discriminator : not tested) ;
 
-o	CAUTION: Transformers are still under development.
+o	CAUTION: Transformers are still under development (in the branch 'Essais')
 
 o	Comparing ML vs a Theory-based model for image generation: Kmeans (emissions = 4.4933411717e-09 kg CO2, duration =  0.0261781215 sec.) vs Fourier (emissions = 1.72199680716e-09 kg CO2, duration = 0.0035228729 sec.)
 
