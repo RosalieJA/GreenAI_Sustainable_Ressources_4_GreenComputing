@@ -1,3 +1,4 @@
+#INSTALLATION DES BIBLIOTHEQUES
 import numpy as np
 import matplotlib.pyplot as plt
 from codecarbon import EmissionsTracker
