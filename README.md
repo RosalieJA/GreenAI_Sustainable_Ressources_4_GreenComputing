@@ -1,10 +1,10 @@
 ## About 
-This student project (TX00 “green AI”, UTC) provides a review (2024), as well as some solutions to assess carbon emissions and reduce costs in modern AI projects, considering various (i) computer architectures, (ii) coding languages and (iii) ML/DL algorithms.
+This student project (TX00 “green AI”, UTC) provides a review (2024), as well as some solutions to assess carbon emissions and reduce costs in modern AI projects, considering various (i) computer architectures, (ii) coding languages and (iii) Machine Learning (ML)/Deep Learning (DL) algorithms.
 
 [![](https://tinyurl.com/greenai-pledge)](https://github.com/daviddao/green-ai)
 
 ## Tools & scripts
--	without libraries, you can refer to Intel “Running Average Power Limit” (RAPL) technology to track carbon emissions and compare different coding languages (here, we provide illustration scripts comparing Python vs C++ 10-layer artificial neural networks) ;
+-	without libraries, you can refer to Intel “Running Average Power Limit” ([RAPL](https://web.eece.maine.edu/~vweaver/projects/rapl/)) technology to track carbon emissions and compare different coding languages (here, we provide illustration scripts comparing Python vs C++ 10-layer artificial neural networks) ;
 
 -	With libraries, you can use [CodeCarbon]( https://codecarbon.io/) to track carbon emissions when using [TensorFlow](https://www.tensorflow.org/) or [Scikit Learn]( https://scikit-learn.org/stable/). Following are some illustrations using scripts provided in the repository with the [MNIST]( https://docs.ultralytics.com/datasets/classify/mnist/) database:
 
