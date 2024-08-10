@@ -10,9 +10,9 @@ With libraries, you can use [CodeCarbon]( https://codecarbon.io/) to track carbo
 
 - For ML, comparison of a supervised K-NN with 3 neighbors (emission = 9.0008262513e-06 kg CO2, accuracy = 0.945) vs an unsupervised K-means algorithm with 256 clusters (emissions = 1.3420924768e-06 kg CO2, accuracy: 0.901) ;
 
-- For DL, comparison between a 10-layer Perceptron (ANN: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), a Convolutional Neural-Network with 7 layers (CNN: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), a Gated Recurrent-Unit network with 2 layers (RNN: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and a Generative Adversarial Network with 5 generator-layers/ 5 discriminator-layers (GAN : not tested) ;
+- For DL, comparison between a 10-layer Perceptron (ANN: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), a Convolutional Neural-Network with 7 layers (CNN: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), and a Gated Recurrent-Unit with 2 layers (RNN: emissions = 0.0001087401 kg CO2, accuracy = 0.987) ;
 
-- CAUTION: Transformers are still under development (in the branch 'Essais')
+- CAUTION: Generative Adversarial Networks with 5 generator-layers/5 discriminator-layers (GAN, 'Main' branch), and Transformers ('Essais' branch) are still under development ;
 
 - Comparison of ML vs a mathematical model for image generation: K-means (emissions = 4.4933411717e-09 kg CO2, duration =  0.0261781215 sec.) vs Fourier (emissions = 1.72199680716e-09 kg CO2, duration = 0.0035228729 sec.)
 
