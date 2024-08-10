@@ -8,9 +8,9 @@ Without libraries, you can refer to Intel “Running Average Power Limit” ([RA
 
 With libraries, you can use [CodeCarbon]( https://codecarbon.io/) to track carbon emissions when using [TensorFlow](https://www.tensorflow.org/) or [Scikit Learn]( https://scikit-learn.org/stable/). Following are some illustrations using scripts provided in the repository with the [MNIST]( https://docs.ultralytics.com/datasets/classify/mnist/) database:
 
-- For ML, comparison of supervised (K-NN with 3 neighbors: emission = 9.0008262513e-06 kg CO2, accuracy = 0.945) vs unsupervised algorithms (K-means with 256 clusters: emissions = 1.3420924768e-06 kg CO2, accuracy: 0.901) ;
+- For ML, comparison of a supervised K-NN with 3 neighbors (emission = 9.0008262513e-06 kg CO2, accuracy = 0.945) vs an unsupervised K-means algorithm with 256 clusters (emissions = 1.3420924768e-06 kg CO2, accuracy: 0.901) ;
 
-- For DL, comparison of ANN (10-layer perceptron: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), CNN (7-layer: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), RNN (GRU with 2 layers: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and GAN (5-layer generator/ 5 layer discriminator : not tested) ;
+- For DL, comparison of a 10-layer perceptron (ANN: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), a convolutional neural-network with 7 layers (CNN: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), a Gated recurrent netwrk with 2 layers (RNN: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and a Generative adversarial network with 5 generator layers/ 5 discriminator layers (GAN : not tested) ;
 
 - CAUTION: Transformers are still under development (in the branch 'Essais')
 
