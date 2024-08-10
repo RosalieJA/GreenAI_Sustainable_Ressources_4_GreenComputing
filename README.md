@@ -10,7 +10,7 @@ With libraries, you can use [CodeCarbon]( https://codecarbon.io/) to track carbo
 
 - For ML, comparison of a supervised K-NN with 3 neighbors (emission = 9.0008262513e-06 kg CO2, accuracy = 0.945) vs an unsupervised K-means algorithm with 256 clusters (emissions = 1.3420924768e-06 kg CO2, accuracy: 0.901) ;
 
-- For DL, comparison of a 10-layer perceptron (ANN: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), a convolutional neural-network with 7 layers (CNN: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), a Gated recurrent netwrk with 2 layers (RNN: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and a Generative adversarial network with 5 generator layers/ 5 discriminator layers (GAN : not tested) ;
+- For DL, comparison of a 10-layer Perceptron (ANN: emissions =  1.4007240778e-05 kg CO2, accuracy = 0.979), a Convolutional Neural-Network with 7 layers (CNN: emissions = 3.7664445672e-05 kg CO2, accuracy = 0.991), a Gated Recurrent-Unit network with 2 layers (RNN: emissions = 0.0001087401 kg CO2, accuracy = 0.987), and a Generative Adversarial Network with 5 generator layers/ 5 discriminator layers (GAN : not tested) ;
 
 - CAUTION: Transformers are still under development (in the branch 'Essais')
 
